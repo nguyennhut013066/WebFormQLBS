@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NguyenNhut.master.cs" Inherits="NguyenNhut_QLBS.NguyenNhut" %>
+
+<%@ Register Src="~/UC/ucHeader.ascx" TagPrefix="uc1" TagName="ucHeader" %>
+<%@ Register Src="~/UC/ucLeft.ascx" TagPrefix="uc1" TagName="ucLeft" %>
+<%@ Register Src="~/UC/ucRight.ascx" TagPrefix="uc1" TagName="ucRight" %>
+<%@ Register Src="~/UC/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+
+
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <form name="form" runat="server">
+        <uc1:ucHeader runat="server" ID="ucHeader" />
+    <div id="body">
+        <img src="Images/Images/Slider.jpg"/>
+        <article>
+            <uc1:ucLeft runat="server" ID="ucLeft" />
+
+            <section>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </section>
+            <uc1:ucRight runat="server" ID="ucRight" />
+        </article>
+        </div>
+        <uc1:ucFooter runat="server" ID="ucFooter" />
+    
+        </form>
+   
+
+</body></html>
